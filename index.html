@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uncle Plumber</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, red, white, orange);
+      color: #222;
+    }
+    header {
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      border-bottom: 2px solid #ccc;
+    }
+    nav a {
+      text-decoration: none;
+      color: #d32f2f;
+      font-weight: bold;
+      border: 1px solid #d32f2f;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.9);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #d32f2f;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #f57c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .rate-stars {
+      font-size: 24px;
+      color: gold;
+    }
+    .form-field {
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>  <header>
+    <h1>Uncle Plumber</h1>
+    <p>Skilled Labour at Your Doorstep</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#book">Book</a>
+    <a href="#help">Help</a>
+    <a href="#rate">Rate Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#apply">Apply for Job</a>
+    <a href="#login">Login</a>
+  </nav>  <section id="about">
+    <h2>About Uncle Plumber</h2>
+    <p><strong>Uncle Plumber</strong> is a modern, app-style labor service website made by <strong>Shreyash Singh Rawat</strong>. The platform allows people to find trusted and skilled laborers quickly and easily without middlemen.</p>
+    <p>It helps society by providing job opportunities to workers and giving citizens reliable services at fair prices. By connecting demand and supply directly, Uncle Plumber supports local employment and builds trust in home services.</p>
+  </section>  <section id="book">
+    <h2>Book a Worker</h2>
+    <form onsubmit="event.preventDefault(); alert('Booking submitted!');">
+      <input class="form-field" type="text" placeholder="Your Name" required />
+      <input class="form-field" type="tel" placeholder="Contact Number" required />
+      <input class="form-field" type="text" placeholder="Your Location" required />
+      <select class="form-field" required>
+        <option value="">Select Service</option>
+        <option>Plumber</option>
+        <option>Electrician</option>
+        <option>Painter</option>
+        <option>Carpenter</option>
+        <option>Mason</option>
+      </select>
+      <button class="button" type="submit">Book Now</button>
+    </form>
+  </section>  <section id="help">
+    <h2>Help</h2>
+    <p>To book a service, go to the <strong>Book a Worker</strong> section, enter your details, and choose the service. Click "Book Now" to request a worker.</p>
+    <p>If you're a worker and want to offer your services, go to the <strong>Apply for Job</strong> section below.</p>
+  </section>  <section id="rate">
+    <h2>Rate Our Platform</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you for rating!');">
+      <label>Rate us: </label>
+      <select class="form-field" required>
+        <option value="">Select Rating</option>
+        <option value="5">★★★★★ - Excellent</option>
+        <option value="4">★★★★☆ - Good</option>
+        <option value="3">★★★☆☆ - Average</option>
+        <option value="2">★★☆☆☆ - Poor</option>
+        <option value="1">★☆☆☆☆ - Bad</option>
+      </select>
+      <button class="button" type="submit">Submit</button>
+    </form>
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> 8865083516</p>
+    <p><strong>Email:</strong> s63470738@gmail.com</p>
+    <h3>Support the Developer</h3>
+    <p>If you'd like to support this project, you can donate via Fampay to <strong>8865083516</strong>.</p>
+  </section>  <section id="apply">
+    <h2>Apply for Job as Labour</h2>
+    <form onsubmit="event.preventDefault(); alert('Application submitted!');">
+      <input class="form-field" type="text" placeholder="Full Name" required />
+      <input class="form-field" type="number" placeholder="Age" required />
+      <input class="form-field" type="tel" placeholder="Contact Number" required />
+      <select class="form-field" required>
+        <option value="">Select Skill</option>
+        <option>Plumber</option>
+        <option>Electrician</option>
+        <option>Painter</option>
+        <option>Carpenter</option>
+        <option>Mason</option>
+      </select>
+      <input class="form-field" type="text" placeholder="City / Location" required />
+      <button class="button" type="submit">Submit Application</button>
+    </form>
+  </section>  <section id="login">
+    <h2>Login Page</h2>
+    <form onsubmit="event.preventDefault(); alert('Login attempted');">
+      <input class="form-field" type="email" placeholder="Email Address" required />
+      <input class="form-field" type="password" placeholder="Password" required />
+      <button class="button" type="submit">Login</button>
+    </form>
+    <br />
+    <button class="button" onclick="alert('Google login coming soon!')">Login with Google</button>
+  </section>  <footer>
+    &copy; 2025 Uncle Plumber. Created by Shreyash Singh Rawat.
+  </footer></body>
+</html>
